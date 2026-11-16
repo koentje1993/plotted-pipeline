@@ -14,7 +14,7 @@ fi
 
 echo "== 1/5 Systeempakketten (python3-venv, ffmpeg)"
 sudo apt-get update -qq
-sudo apt-get install -y -qq python3-venv python3-pip ffmpeg unzip > /dev/null
+sudo apt-get install -y -qq python3-venv python3-pip ffmpeg unzip cron > /dev/null
 
 echo "== 2/5 Python-omgeving"
 python3 -m venv .venv
@@ -49,7 +49,7 @@ echo "== 4/5 Test: render een korte voorbeeldvideo en kijk wat er in Notion klaa
 
 echo "== 5/5 Cronjob: elk kwartier renderen"
 LINE="*/15 * * * * cd ${DIR} && . ./.env && .venv/bin/python -W ignore -m plotted.notion_sync >> ${DIR}/sync.log 2>&1"
-( crontab -l 2>/dev/null | grep -v "plotted.notion_sync" ; echo "$LINE" ) | crontab -
+{ { crontab -l 2>/dev/null || true; } | { grep -v "plotted.notion_sync" || true; }; echo "$LINE"; } | crontab -
 echo "   cronjob staat. Log: ${DIR}/sync.log"
 
 echo
