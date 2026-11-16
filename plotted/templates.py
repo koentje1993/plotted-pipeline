@@ -417,22 +417,50 @@ _SMALL_STATES = {  # landen die te klein zijn voor de 1:110m-kaart: als stip op 
 }
 
 
+def _clip_ring(ring, bbox):
+    """Sutherland-Hodgman: knip een polygoonring af op het kaartvenster (zonder geopandas/shapely)."""
+    lon0, lat0, lon1, lat1 = bbox
+    edges = [(lambda p: p[0] >= lon0, lambda a, b: _cut_x(a, b, lon0)),
+             (lambda p: p[0] <= lon1, lambda a, b: _cut_x(a, b, lon1)),
+             (lambda p: p[1] >= lat0, lambda a, b: _cut_y(a, b, lat0)),
+             (lambda p: p[1] <= lat1, lambda a, b: _cut_y(a, b, lat1))]
+    pts = [tuple(p) for p in ring]
+    for inside, cut in edges:
+        if not pts:
+            break
+        out, prev = [], pts[-1]
+        for cur in pts:
+            if inside(cur):
+                if not inside(prev):
+                    out.append(cut(prev, cur))
+                out.append(cur)
+            elif inside(prev):
+                out.append(cut(prev, cur))
+            prev = cur
+        pts = out
+    return pts
+
+
+def _cut_x(a, b, x):
+    k = (x - a[0]) / (b[0] - a[0])
+    return (x, a[1] + k * (b[1] - a[1]))
+
+
+def _cut_y(a, b, y):
+    k = (y - a[1]) / (b[1] - a[1])
+    return (a[0] + k * (b[0] - a[0]), y)
+
+
 @lru_cache(maxsize=4)
 def _world(bbox):
-    import geopandas as gpd
-    import warnings
-    warnings.filterwarnings("ignore")
-    from shapely.geometry import box
-    w = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
-    clip = box(*bbox)
+    import json
+    from pathlib import Path
+    data = json.loads((Path(__file__).parent / "data" / "world_lowres.json").read_text())
     out = []
-    for name, geom in zip(w["name"], w["geometry"]):
-        geom = geom.intersection(clip)  # alleen wat binnen het kaartvenster valt
-        if geom.is_empty:
-            continue
-        polys = [g for g in getattr(geom, "geoms", [geom]) if g.geom_type == "Polygon"]
-        rings = [list(p.exterior.coords) for p in polys]
-        out.append((name, rings))
+    for name, polys in data:
+        rings = [r for r in (_clip_ring(p, bbox) for p in polys) if len(r) > 2]
+        if rings:
+            out.append((name, rings))
     return out
 
 

@@ -76,7 +76,7 @@ Alle templates gebruiken `tag_num`, `tag`, `right_label`, `hook`, `prompt`, `cap
 
 ## Volgende stappen
 
-- Templates voor kaarten (geopandas) en bar chart races (data per jaar).
+- Templates voor kaarten (meegeleverde wereldkaart) en bar chart races (data per jaar).
 - Automatisch posten: begin in de testfase handmatig of met de planner van YouTube Studio en een X-scheduler, zodat je elke video nog ziet. Automatiseer pas als het format staat.
 
 ## Automatisch renderen vanuit Notion
