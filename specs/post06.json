@@ -1,0 +1,26 @@
+{
+ "template": "map",
+ "mode": "circle",
+ "tag_num": "06",
+ "tag": "MAPS",
+ "right_label": "WORLD POPULATION",
+ "hook": "Half the world lives in this circle.",
+ "prompt": "Guess: how many people?",
+ "center": [
+  24.35,
+  102.54
+ ],
+ "radius_km": 4000,
+ "bbox": [
+  52,
+  -22,
+  152,
+  70
+ ],
+ "grow_seconds": 6,
+ "counter_label": "radius around Yuxi, China",
+ "big_number": "4.32B",
+ "big_label": "55% of humanity (2020)",
+ "caption": "More people live inside this circle than outside it.",
+ "source": "ALASDAIR RAE, WORLDPOP 2020"
+}

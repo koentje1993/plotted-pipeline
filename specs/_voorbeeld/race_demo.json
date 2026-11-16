@@ -1,0 +1,128 @@
+{
+  "template": "race",
+  "tag_num": "01",
+  "tag": "DATA",
+  "right_label": "POPULATION (MILLIONS)",
+  "hook": "The most populous countries, 1950 to today",
+  "prompt": "Guess: who is #1 at the end?",
+  "years": [
+    1950,
+    1970,
+    1990,
+    2010,
+    2023
+  ],
+  "series": {
+    "China": [
+      544,
+      822,
+      1144,
+      1348,
+      1411
+    ],
+    "India": [
+      357,
+      557,
+      870,
+      1240,
+      1429
+    ],
+    "USA": [
+      148,
+      200,
+      248,
+      309,
+      340
+    ],
+    "Indonesia": [
+      69,
+      115,
+      182,
+      242,
+      278
+    ],
+    "Pakistan": [
+      37,
+      58,
+      115,
+      194,
+      240
+    ],
+    "Brazil": [
+      53,
+      95,
+      150,
+      196,
+      216
+    ],
+    "Nigeria": [
+      37,
+      55,
+      95,
+      160,
+      224
+    ],
+    "Bangladesh": [
+      38,
+      65,
+      107,
+      148,
+      173
+    ],
+    "Russia": [
+      102,
+      130,
+      148,
+      143,
+      144
+    ],
+    "Japan": [
+      83,
+      104,
+      124,
+      128,
+      124
+    ],
+    "Germany": [
+      70,
+      78,
+      79,
+      81,
+      84
+    ],
+    "Mexico": [
+      28,
+      51,
+      81,
+      113,
+      128
+    ]
+  },
+  "highlight": "India",
+  "top_n": 8,
+  "pace": [
+    [
+      1950,
+      2000,
+      0.15
+    ],
+    [
+      2000,
+      2023,
+      0.25
+    ]
+  ],
+  "value_fmt": "{:,.0f}M",
+  "events": [
+    {
+      "year": 1990,
+      "text": "Pakistan enters the top 8"
+    },
+    {
+      "year": 2023,
+      "text": "India passes China"
+    }
+  ],
+  "caption": "India is now the most populous country on Earth.",
+  "source": "VOORBEELDDATA - NIET POSTEN"
+}

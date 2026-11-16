@@ -1,0 +1,13 @@
+{
+  "template": "dotgrid",
+  "tag_num": "03",
+  "tag": "DEMO",
+  "right_label": "TEMPLATE TEST",
+  "hook": "Dot grid template: 100 dots, some turn orange.",
+  "highlight": 42,
+  "big_label": "dots highlighted",
+  "caption": "Replace with real data before posting.",
+  "source": "VOORBEELDDATA - NIET POSTEN",
+  "prompt": "Guess: how many turn orange?",
+  "count_fmt": "{:.0f} / 100"
+}

@@ -1,0 +1,96 @@
+{
+ "brand": "ai",
+ "template": "line",
+ "tag_num": "02",
+ "tag": "COMPUTE",
+ "right_label": "TRANSISTORS PER CHIP",
+ "hook": "1971: 2,300 transistors per chip.",
+ "prompt": "Guess: how many today?",
+ "log": true,
+ "points": [
+  [
+   1971,
+   2300
+  ],
+  [
+   1978,
+   29000
+  ],
+  [
+   1985,
+   275000
+  ],
+  [
+   1993,
+   3100000.0
+  ],
+  [
+   2000,
+   42000000.0
+  ],
+  [
+   2006,
+   291000000.0
+  ],
+  [
+   2010,
+   560000000.0
+  ],
+  [
+   2016,
+   15300000000.0
+  ],
+  [
+   2020,
+   16000000000.0
+  ],
+  [
+   2022,
+   80000000000.0
+  ],
+  [
+   2024,
+   208000000000.0
+  ],
+  [
+   2026,
+   336000000000.0
+  ]
+ ],
+ "y_min": 1000,
+ "y_max": 1000000000000.0,
+ "y_ticks": [
+  1000000.0,
+  1000000000.0,
+  1000000000000.0
+ ],
+ "y_tick_fmt": "count",
+ "value_fmt": "count",
+ "seconds_per_year": 0.15,
+ "highlight_from": 2016,
+ "x_labels": [
+  1971,
+  2000,
+  2026
+ ],
+ "events": [
+  {
+   "year": 1978,
+   "text": "Intel 8086"
+  },
+  {
+   "year": 1993,
+   "text": "Pentium"
+  },
+  {
+   "year": 2006,
+   "text": "Core 2 Duo"
+  },
+  {
+   "year": 2022,
+   "text": "Nvidia H100"
+  }
+ ],
+ "caption": "Nvidia Rubin: 336 billion. 146 million times more.",
+ "source": "INTEL; WIKIPEDIA TRANSISTOR COUNT (MANUFACTURER SPECS)"
+}

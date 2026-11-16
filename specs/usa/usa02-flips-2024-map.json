@@ -1,0 +1,37 @@
+{
+ "template": "usmap",
+ "tag_num": "02",
+ "tag": "AMERICA VOTES",
+ "right_label": "PRESIDENT, BY STATE",
+ "hook": "How many states switched sides in 2024?",
+ "prompt": "Guess before the map changes.",
+ "elections": [
+  {
+   "year": 2020,
+   "D": "Biden",
+   "ev_D": 306,
+   "R": "Trump",
+   "ev_R": 232
+  },
+  {
+   "year": 2024,
+   "D": "Harris",
+   "ev_D": 226,
+   "R": "Trump",
+   "ev_R": 312
+  }
+ ],
+ "seconds_per_election": 2.2,
+ "highlight_states": [
+  "Arizona",
+  "Georgia",
+  "Michigan",
+  "Nevada",
+  "Pennsylvania",
+  "Wisconsin"
+ ],
+ "big_number": "6 states",
+ "big_label": "switched from Biden (2020) to Trump (2024)",
+ "caption": "Arizona, Georgia, Michigan, Nevada, Pennsylvania and Wisconsin.",
+ "source": "MIT ELECTION LAB (MEDSL); NATIONAL ARCHIVES"
+}

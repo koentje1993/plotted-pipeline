@@ -1,0 +1,8 @@
+.env
+.venv/
+out/
+stills/
+brand_assets/
+__pycache__/
+*.pyc
+sync.log

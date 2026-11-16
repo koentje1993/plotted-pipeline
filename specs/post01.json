@@ -1,0 +1,44 @@
+{
+  "template": "bars",
+  "tag_num": "01",
+  "tag": "DATA",
+  "right_label": "DAYS TO 1M USERS",
+  "hook": "How fast did they hit 1 million users?",
+  "style": "stacked",
+  "rows": [
+    {
+      "label": "Netflix",
+      "value": 1278,
+      "value_label": "1,278 days"
+    },
+    {
+      "label": "Airbnb",
+      "value": 730,
+      "value_label": "730 days"
+    },
+    {
+      "label": "Facebook",
+      "value": 304,
+      "value_label": "304 days"
+    },
+    {
+      "label": "Spotify",
+      "value": 152,
+      "value_label": "152 days"
+    },
+    {
+      "label": "Instagram",
+      "value": 76,
+      "value_label": "76 days"
+    },
+    {
+      "label": "ChatGPT",
+      "value": 5,
+      "value_label": "5 days",
+      "highlight": true
+    }
+  ],
+  "caption": "ChatGPT needed 5 days. Netflix needed 1,278.",
+  "source": "STATISTA",
+  "prompt": "Guess: who was fastest?"
+}

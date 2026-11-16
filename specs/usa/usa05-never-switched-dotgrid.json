@@ -1,0 +1,16 @@
+{
+ "template": "dotgrid",
+ "tag_num": "05",
+ "tag": "AMERICA VOTES",
+ "right_label": "SAME PARTY SINCE 1976",
+ "hook": "How many states never switched sides since 1976?",
+ "prompt": "Guess before the dots stop.",
+ "total": 50,
+ "cols": 10,
+ "highlight": 10,
+ "fill_seconds": 4,
+ "count_fmt": "{:.0f} / 50",
+ "big_label": "voted for the same party in all 13 elections",
+ "caption": "Minnesota: always Democratic. 9 states: always Republican.",
+ "source": "MIT ELECTION LAB (MEDSL), 1976-2024"
+}

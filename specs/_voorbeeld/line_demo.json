@@ -1,0 +1,52 @@
+{
+  "template": "line",
+  "tag_num": "02",
+  "tag": "DEMO",
+  "right_label": "TEMPLATE TEST",
+  "hook": "Line template: replace this data before posting.",
+  "points": [
+    [
+      1900,
+      10
+    ],
+    [
+      1920,
+      12
+    ],
+    [
+      1940,
+      15
+    ],
+    [
+      1960,
+      25
+    ],
+    [
+      1980,
+      40
+    ],
+    [
+      2000,
+      62
+    ],
+    [
+      2020,
+      90
+    ]
+  ],
+  "highlight_from": 1980,
+  "y_ticks": [
+    25,
+    50,
+    75
+  ],
+  "x_labels": [
+    1900,
+    1960,
+    2020
+  ],
+  "value_fmt": "{:.0f}",
+  "caption": "Orange marks the part that matters.",
+  "source": "VOORBEELDDATA - NIET POSTEN",
+  "seconds_per_year": 0.06
+}

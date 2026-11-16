@@ -1,0 +1,13 @@
+{
+ "template": "dotgrid",
+ "tag_num": "02",
+ "tag": "MAPS",
+ "right_label": "THE NETHERLANDS",
+ "hook": "How much of NL is below sea level?",
+ "prompt": "Guess before the dots stop.",
+ "highlight": 26,
+ "count_fmt": "{:.0f}%",
+ "big_label": "of the land lies below sea level",
+ "caption": "And 59% of the country is at risk of flooding.",
+ "source": "PBL NETHERLANDS ENVIRONMENTAL ASSESSMENT AGENCY"
+}

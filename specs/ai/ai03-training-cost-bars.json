@@ -1,0 +1,51 @@
+{
+ "brand": "ai",
+ "template": "bars",
+ "tag_num": "03",
+ "tag": "MODELS",
+ "right_label": "COMPUTE COST TO TRAIN",
+ "hook": "Training this AI cost just $930.",
+ "prompt": "Guess: what's the most expensive?",
+ "rows": [
+  {
+   "label": "Transformer (2017)",
+   "value": 930,
+   "value_label": "$930"
+  },
+  {
+   "label": "BERT-Large (2018)",
+   "value": 3288,
+   "value_label": "$3.3K"
+  },
+  {
+   "label": "RoBERTa Large (2019)",
+   "value": 160000,
+   "value_label": "$160K"
+  },
+  {
+   "label": "GPT-3 (2020)",
+   "value": 4300000.0,
+   "value_label": "$4.3M"
+  },
+  {
+   "label": "PaLM (2022)",
+   "value": 12400000.0,
+   "value_label": "$12.4M"
+  },
+  {
+   "label": "GPT-4 (2023)",
+   "value": 78400000.0,
+   "value_label": "$78M"
+  },
+  {
+   "label": "Gemini Ultra (2023)",
+   "value": 191400000.0,
+   "value_label": "$191M",
+   "highlight": true
+  }
+ ],
+ "stagger": 0.6,
+ "reveal_pause": 0.9,
+ "caption": "Gemini Ultra: over 200,000 times the Transformer.",
+ "source": "STANFORD AI INDEX 2024, EPOCH AI ESTIMATES"
+}

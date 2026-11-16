@@ -1,0 +1,102 @@
+{
+ "template": "line",
+ "tag_num": "04",
+ "tag": "HISTORY",
+ "right_label": "WORLD POPULATION",
+ "hook": "The first billion took all of history.",
+ "prompt": "Guess: how long did the last billion take?",
+ "points": [
+  [
+   1804,
+   1
+  ],
+  [
+   1927,
+   2
+  ],
+  [
+   1960,
+   3
+  ],
+  [
+   1974,
+   4
+  ],
+  [
+   1987,
+   5
+  ],
+  [
+   1999,
+   6
+  ],
+  [
+   2011,
+   7
+  ],
+  [
+   2022,
+   8
+  ]
+ ],
+ "pace": [
+  [
+   1804,
+   1900,
+   0.03
+  ],
+  [
+   1900,
+   2022,
+   0.075
+  ]
+ ],
+ "highlight_from": 2011,
+ "y_min": 0,
+ "y_max": 8.6,
+ "y_ticks": [
+  2,
+  4,
+  6,
+  8
+ ],
+ "y_tick_fmt": "{}B",
+ "x_labels": [
+  1804,
+  1900,
+  2022
+ ],
+ "value_fmt": "{:.1f}B",
+ "events": [
+  {
+   "year": 1927,
+   "text": "2 billion"
+  },
+  {
+   "year": 1960,
+   "text": "3 billion"
+  },
+  {
+   "year": 1974,
+   "text": "4 billion"
+  },
+  {
+   "year": 1987,
+   "text": "5 billion"
+  },
+  {
+   "year": 1999,
+   "text": "6 billion"
+  },
+  {
+   "year": 2011,
+   "text": "7 billion"
+  },
+  {
+   "year": 2022,
+   "text": "8 billion"
+  }
+ ],
+ "caption": "The last billion took 11 years.",
+ "source": "UN WORLD POPULATION PROSPECTS"
+}

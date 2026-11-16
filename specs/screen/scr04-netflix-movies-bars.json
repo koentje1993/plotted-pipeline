@@ -1,0 +1,62 @@
+{
+ "template": "bars",
+ "tag_num": "04",
+ "tag": "SCREEN",
+ "right_label": "VIEWS, FIRST 91 DAYS",
+ "hook": "Netflix's #1 movie isn't live-action.",
+ "prompt": "Guess the film.",
+ "rows": [
+  {
+   "label": "Swapped",
+   "value": 144.9,
+   "value_label": "144.9M",
+   "highlight": false
+  },
+  {
+   "label": "Back in Action",
+   "value": 147.2,
+   "value_label": "147.2M",
+   "highlight": false
+  },
+  {
+   "label": "Bird Box",
+   "value": 157.4,
+   "value_label": "157.4M",
+   "highlight": false
+  },
+  {
+   "label": "The Adam Project",
+   "value": 157.6,
+   "value_label": "157.6M",
+   "highlight": false
+  },
+  {
+   "label": "Don't Look Up",
+   "value": 171.4,
+   "value_label": "171.4M",
+   "highlight": false
+  },
+  {
+   "label": "Carry-On",
+   "value": 172.1,
+   "value_label": "172.1M",
+   "highlight": false
+  },
+  {
+   "label": "Red Notice",
+   "value": 230.9,
+   "value_label": "230.9M",
+   "highlight": false
+  },
+  {
+   "label": "KPop Demon Hunters",
+   "value": 325.1,
+   "value_label": "325.1M",
+   "highlight": true
+  }
+ ],
+ "stagger": 0.5,
+ "reveal_pause": 1.0,
+ "caption": "KPop Demon Hunters: 325.1M views, 94M ahead of #2.",
+ "source": "NETFLIX TOP 10, VIA WHAT'S ON NETFLIX, SEP 2026"
+}

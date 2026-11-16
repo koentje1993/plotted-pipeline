@@ -1,0 +1,72 @@
+{
+ "template": "bars",
+ "tag_num": "17",
+ "tag": "MONEY",
+ "right_label": "MARKET VALUE IN 2000, USD",
+ "hook": "The 10 biggest companies of 2000.",
+ "prompt": "Guess: how many are still top 10?",
+ "rows": [
+  {
+   "label": "Microsoft",
+   "value": 586,
+   "value_label": "$586B",
+   "highlight": true
+  },
+  {
+   "label": "General Electric",
+   "value": 477,
+   "value_label": "$477B",
+   "highlight": false
+  },
+  {
+   "label": "Cisco",
+   "value": 366,
+   "value_label": "$366B",
+   "highlight": false
+  },
+  {
+   "label": "Walmart",
+   "value": 260,
+   "value_label": "$260B",
+   "highlight": false
+  },
+  {
+   "label": "Exxon Mobil",
+   "value": 260,
+   "value_label": "$260B",
+   "highlight": false
+  },
+  {
+   "label": "Intel",
+   "value": 251,
+   "value_label": "$251B",
+   "highlight": false
+  },
+  {
+   "label": "NTT Docomo",
+   "value": 246,
+   "value_label": "$246B",
+   "highlight": false
+  },
+  {
+   "label": "Royal Dutch Shell",
+   "value": 203,
+   "value_label": "$203B",
+   "highlight": false
+  },
+  {
+   "label": "Pfizer",
+   "value": 202,
+   "value_label": "$202B",
+   "highlight": false
+  },
+  {
+   "label": "Nokia",
+   "value": 186,
+   "value_label": "$186B",
+   "highlight": false
+  }
+ ],
+ "caption": "Only one is still in the top 10 today: Microsoft.",
+ "source": "CITY INDEX (2000); TOP 10 ON 31 DEC 2025: WIKIPEDIA"
+}

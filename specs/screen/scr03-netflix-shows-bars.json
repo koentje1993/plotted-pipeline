@@ -1,0 +1,62 @@
+{
+ "template": "bars",
+ "tag_num": "03",
+ "tag": "SCREEN",
+ "right_label": "VIEWS, FIRST 91 DAYS",
+ "hook": "Netflix's most-watched show ever?",
+ "prompt": "Guess before #1 appears.",
+ "rows": [
+  {
+   "label": "I Will Find You",
+   "value": 120.8,
+   "value_label": "120.8M",
+   "highlight": false
+  },
+  {
+   "label": "Stranger Things 5",
+   "value": 133.8,
+   "value_label": "133.8M",
+   "highlight": false
+  },
+  {
+   "label": "Stranger Things 4",
+   "value": 140.7,
+   "value_label": "140.7M",
+   "highlight": false
+  },
+  {
+   "label": "Adolescence",
+   "value": 142.6,
+   "value_label": "142.6M",
+   "highlight": false
+  },
+  {
+   "label": "Squid Game S3",
+   "value": 145.8,
+   "value_label": "145.8M",
+   "highlight": false
+  },
+  {
+   "label": "Squid Game S2",
+   "value": 192.6,
+   "value_label": "192.6M",
+   "highlight": false
+  },
+  {
+   "label": "Wednesday S1",
+   "value": 252.1,
+   "value_label": "252.1M",
+   "highlight": false
+  },
+  {
+   "label": "Squid Game S1",
+   "value": 265.2,
+   "value_label": "265.2M",
+   "highlight": true
+  }
+ ],
+ "stagger": 0.5,
+ "reveal_pause": 1.0,
+ "caption": "Squid Game S1: 265.2M views. Not even in English.",
+ "source": "NETFLIX TOP 10, VIA WHAT'S ON NETFLIX, SEP 2026"
+}

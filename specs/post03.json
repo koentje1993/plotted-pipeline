@@ -1,0 +1,53 @@
+{
+ "template": "dotgrid",
+ "mode": "drain",
+ "tag_num": "03",
+ "tag": "MONEY",
+ "right_label": "EURO · 2000 TO 2025",
+ "hook": "Your €100 from 2000 just shrank.",
+ "prompt": "Guess: what is it worth now?",
+ "highlight": 55,
+ "count_fmt": "€{:.0f}",
+ "years": [
+  2000,
+  2025
+ ],
+ "fill_seconds": 6,
+ "big_label": "is what €100 from 2000 buys today",
+ "caption": "You'd need €180 today to buy what €100 bought in 2000.",
+ "source": "CBS CONSUMER PRICE INDEX",
+ "series": [
+  [
+   2000,
+   100.0
+  ],
+  [
+   2010,
+   81.53
+  ],
+  [
+   2020,
+   69.42
+  ],
+  [
+   2021,
+   67.61
+  ],
+  [
+   2022,
+   61.46
+  ],
+  [
+   2023,
+   59.19
+  ],
+  [
+   2024,
+   57.27
+  ],
+  [
+   2025,
+   55.47
+  ]
+ ]
+}

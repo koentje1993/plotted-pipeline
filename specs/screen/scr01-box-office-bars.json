@@ -1,0 +1,62 @@
+{
+ "template": "bars",
+ "tag_num": "01",
+ "tag": "SCREEN",
+ "right_label": "WORLDWIDE BOX OFFICE",
+ "hook": "The biggest box office hit ever? It's close.",
+ "prompt": "Guess the #1.",
+ "rows": [
+  {
+   "label": "Ne Zha 2",
+   "value": 2.0,
+   "value_label": "$2.00B",
+   "highlight": false
+  },
+  {
+   "label": "Avengers: Infinity War",
+   "value": 2.05,
+   "value_label": "$2.05B",
+   "highlight": false
+  },
+  {
+   "label": "Star Wars: The Force Awakens",
+   "value": 2.06,
+   "value_label": "$2.06B",
+   "highlight": false
+  },
+  {
+   "label": "Titanic",
+   "value": 2.22,
+   "value_label": "$2.22B",
+   "highlight": false
+  },
+  {
+   "label": "Avatar: The Way of Water",
+   "value": 2.32,
+   "value_label": "$2.32B",
+   "highlight": false
+  },
+  {
+   "label": "Spider-Man: Brand New Day",
+   "value": 2.52,
+   "value_label": "$2.52B",
+   "highlight": false
+  },
+  {
+   "label": "Avatar",
+   "value": 2.92,
+   "value_label": "$2.92B",
+   "highlight": false
+  },
+  {
+   "label": "Avengers: Endgame",
+   "value": 2.94,
+   "value_label": "$2.94B",
+   "highlight": true
+  }
+ ],
+ "stagger": 0.5,
+ "reveal_pause": 1.0,
+ "caption": "Endgame leads Avatar by about $19M.",
+ "source": "THE NUMBERS, ALL-TIME WORLDWIDE, NOV 2026"
+}

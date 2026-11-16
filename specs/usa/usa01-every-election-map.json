@@ -1,0 +1,113 @@
+{
+ "template": "usmap",
+ "tag_num": "01",
+ "tag": "AMERICA VOTES",
+ "right_label": "PRESIDENT, BY STATE",
+ "hook": "13 elections. 50 states. One map.",
+ "prompt": "Guess: which states flip the most?",
+ "elections": [
+  {
+   "year": 1976,
+   "D": "Carter",
+   "ev_D": 297,
+   "R": "Ford",
+   "ev_R": 240
+  },
+  {
+   "year": 1980,
+   "D": "Carter",
+   "ev_D": 49,
+   "R": "Reagan",
+   "ev_R": 489
+  },
+  {
+   "year": 1984,
+   "D": "Mondale",
+   "ev_D": 13,
+   "R": "Reagan",
+   "ev_R": 525
+  },
+  {
+   "year": 1988,
+   "D": "Dukakis",
+   "ev_D": 111,
+   "R": "Bush",
+   "ev_R": 426
+  },
+  {
+   "year": 1992,
+   "D": "Clinton",
+   "ev_D": 370,
+   "R": "Bush",
+   "ev_R": 168
+  },
+  {
+   "year": 1996,
+   "D": "Clinton",
+   "ev_D": 379,
+   "R": "Dole",
+   "ev_R": 159
+  },
+  {
+   "year": 2000,
+   "D": "Gore",
+   "ev_D": 266,
+   "R": "Bush",
+   "ev_R": 271
+  },
+  {
+   "year": 2004,
+   "D": "Kerry",
+   "ev_D": 251,
+   "R": "Bush",
+   "ev_R": 286
+  },
+  {
+   "year": 2008,
+   "D": "Obama",
+   "ev_D": 365,
+   "R": "McCain",
+   "ev_R": 173
+  },
+  {
+   "year": 2012,
+   "D": "Obama",
+   "ev_D": 332,
+   "R": "Romney",
+   "ev_R": 206
+  },
+  {
+   "year": 2016,
+   "D": "Clinton",
+   "ev_D": 227,
+   "R": "Trump",
+   "ev_R": 304
+  },
+  {
+   "year": 2020,
+   "D": "Biden",
+   "ev_D": 306,
+   "R": "Trump",
+   "ev_R": 232
+  },
+  {
+   "year": 2024,
+   "D": "Harris",
+   "ev_D": 226,
+   "R": "Trump",
+   "ev_R": 312
+  }
+ ],
+ "seconds_per_election": 0.85,
+ "highlight_states": [
+  "Florida",
+  "Georgia",
+  "Ohio",
+  "Pennsylvania",
+  "Wisconsin"
+ ],
+ "big_number": "5 flips each",
+ "big_label": "FL, GA, OH, PA and WI since 1976",
+ "caption": "Florida, Georgia, Ohio, Pennsylvania, Wisconsin: switched sides 5 times.",
+ "source": "MIT ELECTION LAB (MEDSL); NATIONAL ARCHIVES"
+}

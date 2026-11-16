@@ -1,0 +1,89 @@
+{
+ "template": "line",
+ "tag_num": "03",
+ "tag": "AMERICA VOTES",
+ "right_label": "VOTES FOR PRESIDENT",
+ "hook": "1976: 81.6 million votes for president.",
+ "prompt": "Guess: how many in 2024?",
+ "points": [
+  [
+   1976,
+   81.6
+  ],
+  [
+   1980,
+   86.5
+  ],
+  [
+   1984,
+   92.65
+  ],
+  [
+   1988,
+   91.59
+  ],
+  [
+   1992,
+   104.6
+  ],
+  [
+   1996,
+   96.39
+  ],
+  [
+   2000,
+   105.59
+  ],
+  [
+   2004,
+   122.35
+  ],
+  [
+   2008,
+   131.42
+  ],
+  [
+   2012,
+   129.14
+  ],
+  [
+   2016,
+   136.79
+  ],
+  [
+   2020,
+   158.53
+  ],
+  [
+   2024,
+   155.41
+  ]
+ ],
+ "y_min": 0,
+ "y_max": 180,
+ "y_ticks": [
+  50,
+  100,
+  150
+ ],
+ "y_tick_fmt": "{:.0f}M",
+ "value_fmt": "{:.1f}M",
+ "seconds_per_year": 0.2,
+ "x_labels": [
+  1976,
+  2000,
+  2024
+ ],
+ "events": [
+  {
+   "year": 1992,
+   "text": "Perot's third-party run"
+  },
+  {
+   "year": 2020,
+   "text": "Record: 158.5M"
+  }
+ ],
+ "caption": "2024: 155.4 million. Almost twice 1976.",
+ "source": "MIT ELECTION LAB (MEDSL), STATE RETURNS 1976-2024"
+}

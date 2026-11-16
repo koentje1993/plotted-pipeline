@@ -1,0 +1,28 @@
+{
+ "template": "dotgrid",
+ "tag_num": "19",
+ "tag": "DATA",
+ "right_label": "SAFE TOILET · 2015 TO 2024",
+ "hook": "How many people have a safe toilet?",
+ "prompt": "Guess before the dots stop.",
+ "highlight": 58,
+ "count_fmt": "{:.0f} / 100",
+ "years": [
+  2015,
+  2024
+ ],
+ "series": [
+  [
+   2015,
+   48
+  ],
+  [
+   2024,
+   58
+  ]
+ ],
+ "fill_seconds": 5,
+ "big_label": "of every 100 people have a safe toilet",
+ "caption": "Still 3.4 billion people without one (2024).",
+ "source": "WHO/UNICEF JMP, 2025 REPORT"
+}

@@ -1,0 +1,60 @@
+{
+ "template": "bars",
+ "tag_num": "20",
+ "tag": "HISTORY",
+ "right_label": "NOBEL PRIZES TO WOMEN",
+ "hook": "The 2020s aren't over. They already lead.",
+ "prompt": "Guess: which decade gave women the most?",
+ "rows": [
+  {
+   "label": "1901–1959",
+   "value": 12,
+   "value_label": "12",
+   "highlight": false
+  },
+  {
+   "label": "1960s",
+   "value": 3,
+   "value_label": "3",
+   "highlight": false
+  },
+  {
+   "label": "1970s",
+   "value": 4,
+   "value_label": "4",
+   "highlight": false
+  },
+  {
+   "label": "1980s",
+   "value": 4,
+   "value_label": "4",
+   "highlight": false
+  },
+  {
+   "label": "1990s",
+   "value": 7,
+   "value_label": "7",
+   "highlight": false
+  },
+  {
+   "label": "2000s",
+   "value": 11,
+   "value_label": "11",
+   "highlight": false
+  },
+  {
+   "label": "2010s",
+   "value": 13,
+   "value_label": "13",
+   "highlight": false
+  },
+  {
+   "label": "2020s so far",
+   "value": 15,
+   "value_label": "15",
+   "highlight": true
+  }
+ ],
+ "caption": "15 since 2020: more than 1901–1959 combined.",
+ "source": "NOBELPRIZE.ORG, PRIZES AWARDED TO WOMEN 1901–2026"
+}

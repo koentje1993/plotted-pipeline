@@ -1,0 +1,53 @@
+{
+ "template": "bars",
+ "tag_num": "07",
+ "tag": "MONEY",
+ "right_label": "BIG MAC PRICE IN USD",
+ "hook": "A Big Mac costs $9.08 somewhere.",
+ "prompt": "Guess: where is it most expensive?",
+ "rows": [
+  {
+   "label": "Switzerland",
+   "value": 9.08,
+   "value_label": "$9.08",
+   "highlight": true
+  },
+  {
+   "label": "Uruguay",
+   "value": 8.76,
+   "value_label": "$8.76"
+  },
+  {
+   "label": "Norway",
+   "value": 7.52,
+   "value_label": "$7.52"
+  },
+  {
+   "label": "Sweden",
+   "value": 7.26,
+   "value_label": "$7.26"
+  },
+  {
+   "label": "Denmark",
+   "value": 7.14,
+   "value_label": "$7.14"
+  },
+  {
+   "label": "Britain",
+   "value": 7.08,
+   "value_label": "$7.08"
+  },
+  {
+   "label": "Euro area",
+   "value": 7.05,
+   "value_label": "$7.05"
+  },
+  {
+   "label": "United States",
+   "value": 6.12,
+   "value_label": "$6.12"
+  }
+ ],
+ "caption": "Same burger: $9.08 in Switzerland, $6.12 in the US.",
+ "source": "THE ECONOMIST BIG MAC INDEX, JAN 2026"
+}

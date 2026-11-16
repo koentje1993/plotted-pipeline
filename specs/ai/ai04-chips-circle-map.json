@@ -1,0 +1,27 @@
+{
+ "brand": "ai",
+ "template": "map",
+ "mode": "circle",
+ "tag_num": "04",
+ "tag": "COMPUTE",
+ "right_label": "ADVANCED CHIPS (<10NM)",
+ "hook": "All advanced chipmaking: one circle.",
+ "prompt": "Guess: which countries?",
+ "center": [
+  30.9,
+  124.0
+ ],
+ "radius_km": 850,
+ "bbox": [
+  106,
+  14,
+  144,
+  46
+ ],
+ "grow_seconds": 5,
+ "counter_label": "radius",
+ "big_number": "100%",
+ "big_label": "of sub-10nm capacity",
+ "caption": "Taiwan 69%, South Korea 31%. The US: 0% (2022).",
+ "source": "SIA / BCG 2024, LOGIC <10NM WAFER CAPACITY, 2022"
+}

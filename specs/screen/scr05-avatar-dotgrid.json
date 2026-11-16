@@ -1,0 +1,14 @@
+{
+ "template": "dotgrid",
+ "tag_num": "05",
+ "tag": "SCREEN",
+ "right_label": "AVATAR (2009), BOX OFFICE",
+ "hook": "Of every $100 Avatar made, how much came from the US?",
+ "prompt": "Guess before the dots stop.",
+ "highlight": 27,
+ "fill_seconds": 4,
+ "count_fmt": "${:.0f} / $100",
+ "big_label": "came from the US and Canada",
+ "caption": "The other $73 came from the rest of the world.",
+ "source": "THE NUMBERS: $785M DOMESTIC OF $2.92B WORLDWIDE"
+}

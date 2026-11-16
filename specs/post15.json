@@ -1,0 +1,66 @@
+{
+ "template": "bars",
+ "tag_num": "15",
+ "tag": "DATA",
+ "right_label": "% OF NEW CARS ELECTRIC, 2025",
+ "hook": "This country buys almost only EVs.",
+ "prompt": "Guess: which one?",
+ "rows": [
+  {
+   "label": "Norway",
+   "value": 97,
+   "value_label": "97%",
+   "highlight": true
+  },
+  {
+   "label": "Denmark",
+   "value": 71,
+   "value_label": "71%",
+   "highlight": false
+  },
+  {
+   "label": "Nepal",
+   "value": 68,
+   "value_label": "68%",
+   "highlight": false
+  },
+  {
+   "label": "Iceland",
+   "value": 62,
+   "value_label": "62%",
+   "highlight": false
+  },
+  {
+   "label": "Sweden",
+   "value": 61,
+   "value_label": "61%",
+   "highlight": false
+  },
+  {
+   "label": "Netherlands",
+   "value": 58,
+   "value_label": "58%",
+   "highlight": false
+  },
+  {
+   "label": "China",
+   "value": 53,
+   "value_label": "53%",
+   "highlight": false
+  },
+  {
+   "label": "World",
+   "value": 25,
+   "value_label": "25%",
+   "highlight": false
+  },
+  {
+   "label": "United States",
+   "value": 10,
+   "value_label": "10%",
+   "highlight": false
+  }
+ ],
+ "caption": "Norway: 97% of new cars. The world: 1 in 4.",
+ "source": "IEA GLOBAL EV OUTLOOK 2026 (INCL. PLUG-IN HYBRIDS)"
+}

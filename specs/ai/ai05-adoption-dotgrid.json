@@ -1,0 +1,61 @@
+{
+ "brand": "ai",
+ "template": "dotgrid",
+ "tag_num": "05",
+ "tag": "ADOPTION",
+ "right_label": "COMPANIES USING AI",
+ "hook": "How many companies use AI now?",
+ "prompt": "Guess before the dots stop.",
+ "highlight": 89,
+ "series": [
+  [
+   2017,
+   20
+  ],
+  [
+   2018,
+   47
+  ],
+  [
+   2019,
+   58
+  ],
+  [
+   2020,
+   50
+  ],
+  [
+   2021,
+   56
+  ],
+  [
+   2022,
+   50
+  ],
+  [
+   2023,
+   55
+  ],
+  [
+   2024,
+   78
+  ],
+  [
+   2025,
+   88
+  ],
+  [
+   2026,
+   89
+  ]
+ ],
+ "years": [
+  2017,
+  2026
+ ],
+ "fill_seconds": 6,
+ "count_fmt": "{:.0f} / 100",
+ "big_label": "use AI in at least one business function",
+ "caption": "In 2017 it was 20. In 2026 it's 89.",
+ "source": "MCKINSEY GLOBAL SURVEYS ON THE STATE OF AI, 2017-2026"
+}

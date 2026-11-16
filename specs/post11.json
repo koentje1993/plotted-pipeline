@@ -1,0 +1,60 @@
+{
+ "template": "bars",
+ "tag_num": "11",
+ "tag": "HISTORY",
+ "right_label": "MAX LAND AREA, MILLION KM²",
+ "hook": "One empire ruled a quarter of all land.",
+ "prompt": "Guess: which one?",
+ "rows": [
+  {
+   "label": "British Empire",
+   "value": 35.5,
+   "value_label": "35.5M km²",
+   "highlight": true
+  },
+  {
+   "label": "Mongol Empire",
+   "value": 24.0,
+   "value_label": "24.0M km²",
+   "highlight": false
+  },
+  {
+   "label": "Russian Empire",
+   "value": 22.8,
+   "value_label": "22.8M km²",
+   "highlight": false
+  },
+  {
+   "label": "Qing dynasty",
+   "value": 14.7,
+   "value_label": "14.7M km²",
+   "highlight": false
+  },
+  {
+   "label": "Spanish Empire",
+   "value": 13.7,
+   "value_label": "13.7M km²",
+   "highlight": false
+  },
+  {
+   "label": "French colonial empire",
+   "value": 11.5,
+   "value_label": "11.5M km²",
+   "highlight": false
+  },
+  {
+   "label": "Abbasid Caliphate",
+   "value": 11.1,
+   "value_label": "11.1M km²",
+   "highlight": false
+  },
+  {
+   "label": "Umayyad Caliphate",
+   "value": 11.1,
+   "value_label": "11.1M km²",
+   "highlight": false
+  }
+ ],
+ "caption": "The British Empire in 1920: 26% of Earth's land.",
+ "source": "LIST OF LARGEST EMPIRES (TAAGEPERA ET AL.), ESTIMATES"
+}
