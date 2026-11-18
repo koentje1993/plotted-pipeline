@@ -128,15 +128,33 @@ def draw_base(ax, tag_num, tag_name, right_label, source, source_alpha=1.0, word
 
 def draw_hook(ax, hook, y_top=200, px=104, alpha=1.0, dy=0.0):
     """De hook: groot, vet, maximaal twee regels (cold open). Te lang? Dan krimpt de letter tot 80 px.
+    Woorden tussen *sterretjes* krijgen de accentkleur, zodat het oog in de eerste seconde op de kern valt.
     Geeft de onderkant (y) terug."""
-    lines = wrap(hook, "bold", px, W - 2 * PAD_X)
+    words, on = [], False
+    for w in hook.split():
+        start = w.startswith("*")
+        if start:
+            on = True
+        end = w.rstrip(".,!?:;").endswith("*")
+        words.append((w.replace("*", ""), on))
+        if end:
+            on = False
+    clean = " ".join(w for w, _ in words)
+    lines = wrap(clean, "bold", px, W - 2 * PAD_X)
     while len(lines) > 2 and px > 80:
         px -= 4
-        lines = wrap(hook, "bold", px, W - 2 * PAD_X)
+        lines = wrap(clean, "bold", px, W - 2 * PAD_X)
     lh = px * 1.04
     y = y_top + px * 0.8 + dy
+    space = text_width("a a", "bold", px) - 2 * text_width("a", "bold", px)
+    i = 0
     for ln in lines:
-        text(ax, PAD_X, y, ln, "bold", px, PAPER, alpha=alpha)
+        x = PAD_X
+        for _ in ln.split():
+            w, acc = words[i]
+            i += 1
+            text(ax, x, y, w, "bold", px, ACC() if acc else PAPER, alpha=alpha)
+            x += text_width(w, "bold", px) + space
         y += lh
     return y_top + len(lines) * lh
 

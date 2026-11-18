@@ -19,7 +19,8 @@ from .brand import (ACC, MUTED, PAD_X, PAPER, SLATE, set_theme, W, draw_base, dr
                     draw_hook, draw_progress, draw_prompt, ramp, text, text_width)
 from .logo import draw_mark, draw_wordmark
 
-START = 0.15         # cold open: de grafiek beweegt vrijwel direct, naast de hook (was 0.9)
+START = -0.8         # cold open v2: het lichaam is bij frame 0 al 0,8 s op weg, zodat het eerste beeld nooit leeg is
+                     # (was 0.15; een leeg eerste beeld liet ~47% wegswipen)
 CAPTION_Y = 1380
 HOLD = 2.6           # na de onthulling: conclusie + volg-oproep
 
@@ -401,7 +402,9 @@ def frame(ax, spec, t):
 
 
 def beats(spec):
-    return sorted(TEMPLATES[spec["template"]][0](spec)["beats"])
+    # beats van voor frame 0 (door de negatieve START) vallen weg; er klinkt wel direct een tick
+    bs = [(max(0.0, t), k) for t, k in TEMPLATES[spec["template"]][0](spec)["beats"] if t >= -0.05 or k != "tick"]
+    return sorted(bs + [(0.0, "tick")])
 
 
 # ---------------------------------------------------------------- kaart
@@ -509,7 +512,7 @@ def map_draw(ax, spec, t, top, tl):
     from matplotlib.patches import Polygon
     proj, bbox, bottom = _map_box(spec, top + 20)
     lon0, lat0, lon1, lat1 = bbox
-    k = ramp(t, START, tl["dur"]) if spec.get("mode") == "circle" else None
+    k = (1 - (1 - min(1.0, max(0.0, (t - START) / tl["dur"]))) ** 2) if spec.get("mode") == "circle" else None
     lit = set()
     order = spec.get("countries", [])
     if spec.get("mode") != "circle":
