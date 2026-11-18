@@ -251,7 +251,7 @@ def line_draw(ax, spec, t, top, tl):
 # ---------------------------------------------------------------- dotgrid met teller
 def dotgrid_timeline(spec):
     dur = spec.get("fill_seconds", 4.0)
-    hot = spec["highlight"]
+    hot = max(1, int(round(spec["highlight"])))  # highlight mag een kommagetal zijn (bijv. 8.2 minuten)
     beats = [(START + dur * i / hot, "tick") for i in range(0, hot, max(1, hot // 12))]
     beats.append((START + dur, "reveal"))
     return {"reveal": START + dur, "beats": beats}
@@ -267,7 +267,7 @@ def dotgrid_draw(ax, spec, t, top, tl):
     drain = spec.get("mode") == "drain"
     value = total - (total - hot) * frac if drain else hot * frac
     if spec.get("series"):  # echte waarden per jaar i.p.v. een rechte lijn
-        y0, y1 = spec["years"]
+        y0, y1 = spec["years"][0], max(spec["years"][-1], spec["series"][-1][0])  # eindig op het laatste datapunt
         value = _interp(spec["series"], y0 + (y1 - y0) * frac)
     shown = int(round(value))
     for i in range(total):
@@ -281,7 +281,9 @@ def dotgrid_draw(ax, spec, t, top, tl):
     fmt = spec.get("count_fmt", "{:.0f} / " + str(total))
     text(ax, PAD_X, by, fmt.format(value), "mono_bold", 110, ACC())
     if spec.get("years"):
-        y0, y1 = spec["years"]
+        y0, y1 = spec["years"][0], spec["years"][-1]
+        if spec.get("series"):
+            y1 = max(y1, spec["series"][-1][0])
         _year_counter(ax, y0 + (y1 - y0) * frac, W - PAD_X, by, px=110)
     text(ax, PAD_X, by + 70, spec.get("big_label", ""), "medium", 40, MUTED, alpha=ramp(t, tl["reveal"], 0.4))
 
